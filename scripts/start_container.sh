@@ -2,7 +2,7 @@
 set -e
 
 # Pull the Docker image from Docker Hub
-echo
+docker pull harshalbh/simple-python-flask
 
 # Run the Docker image as a container
-echo
+docker run -d -p 5000:5000 harshalbh/simple-python-flask
